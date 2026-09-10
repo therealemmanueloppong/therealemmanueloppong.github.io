@@ -1,0 +1,18 @@
+[
+  {
+    "category": "Languages",
+    "items": ["Python", "C++/C", "Java", "JavaScript", "TypeScript", "SQL", "Go", "Dart"]
+  },
+  {
+    "category": "Frameworks & Libraries",
+    "items": ["React", "Node.js", "Flask", "Pytest", "JUnit", "PyTorch", "LangChain", "LangGraph"]
+  },
+  {
+    "category": "Databases & Infrastructure",
+    "items": ["PostgreSQL", "MongoDB", "AWS", "Docker"]
+  },
+  {
+    "category": "Developer Tools",
+    "items": ["Git", "CircleCI", "Buildkite", "Bazel"]
+  }
+]

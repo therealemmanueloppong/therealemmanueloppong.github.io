@@ -1,0 +1,68 @@
+[
+  {
+    "organization": "Georgia State University",
+    "role": "Graduate Research Assistant",
+    "type": "contract",
+    "location": "Atlanta, GA",
+    "startDate": "2026-08",
+    "endDate": "Present",
+    "description": "Conducting research at the intersection of AI and bioinformatics, developing machine learning methods for DNA read mapping and DNA storage systems.",
+    "technologies": ["Python", "C++", "Pytorch"],
+    "highlights": []
+  },
+  {
+    "organization": "Uber",
+    "role": "Software Engineer Intern",
+    "type": "internship",
+    "location": "San Francisco, CA",
+    "startDate": "2026-05",
+    "endDate": "2026-08",
+    "description": "Built an LLM-powered monitoring pipeline using JFR telemetry to detect subtle regressions across critical Java services.",
+    "technologies": ["Java", "LLM", "LangChain", "JUnit", "Bazel", "Buildkite", "JFR"],
+    "highlights": []
+  },
+  {
+    "organization": "Georgia State University",
+    "role": "Graduate Teaching Assistant",
+    "type": "contract",
+    "location": "Atlanta, GA",
+    "startDate": "2025-08",
+    "endDate": "2026-05",
+    "description": "Supported computer science instruction and student learning across systems-level programming and intro level CS courses.",
+    "technologies": ["C", "Python", "Linux", "Shell Scripting", "Regular Expressions"],
+    "highlights": []
+  },
+  {
+    "organization": "New York University Abu Dhabi",
+    "role": "Software Engineer(R&D)",
+    "type": "full-time",
+    "location": "Abu Dhabi, UAE",
+    "startDate": "2023-11",
+    "endDate": "2025-08",
+    "description": "Developed research-driven AI and software systems spanning retrieval-augmented generation, large-scale visualization, and cloud infrastructure.",
+    "technologies": ["Python", "Machine Learning", "RAG", "LLMs", "Docker", "AWS", "Bash"],
+    "highlights": []
+  },
+  {
+    "organization": "Center for Interacting Urban Networks, NYU Abu Dhabi",
+    "role": "Software Engineer",
+    "type": "internship",
+    "location": "Abu Dhabi, UAE",
+    "startDate": "2022-08",
+    "endDate": "2023-05",
+    "description": "Co-developed an interactive dashboard providing air quality insights to students across Abu Dhabi schools and improved deployment and infrastructure efficiency.",
+    "technologies": ["Python", "ReactJS", "JavaScript", "CircleCI", "AWS", "Docker", "Blazegraph"],
+    "highlights": []
+  },
+  {
+    "organization": "LinkedIn",
+    "role": "Software Engineer Intern",
+    "type": "internship",
+    "location": "Sunnyvale, CA",
+    "startDate": "2022-05",
+    "endDate": "2022-08",
+    "description": "Built backend services and testing infrastructure to accelerate on-call engineers' response to deployment issues",
+    "technologies": ["Python", "Flask", "SQL", "Pytest"],
+    "highlights": []
+  }
+]
