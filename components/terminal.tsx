@@ -86,12 +86,12 @@ export function Terminal({ context }: { context: PortfolioContext }) {
         {booting ? <div className="boot" onClick={() => setBooting(false)}><strong>EMMANUEL.OS <span>v1.0</span></strong><p>Initializing system...</p><p>Loading profile<span>........ OK</span></p><p>Loading experience<span>.... OK</span></p><p>Loading projects<span>...... OK</span></p><p>Loading skills<span>........ OK</span></p><p className="ready">System ready.</p><small>click to skip</small></div> : <>
           <div className="intro">
             <p className="system">SYSTEM ONLINE</p>
-            <pre className="ascii-banner" aria-label="Emmanuel OS">{`███████╗███╗   ███╗███╗   ███╗ █████╗ ███╗   ██╗██╗   ██╗███████╗██╗
-██╔════╝████╗ ████║████╗ ████║██╔══██╗████╗  ██║██║   ██║██╔════╝██║
-█████╗  ██╔████╔██║██╔████╔██║███████║██╔██╗ ██║██║   ██║█████╗  ██║
-██╔══╝  ██║╚██╔╝██║██║╚██╔╝██║██╔══██║██║╚██╗██║██║   ██║██╔══╝  ██║
-███████╗██║ ╚═╝ ██║██║ ╚═╝ ██║██║  ██║██║ ╚████║╚██████╔╝███████╗███████╗
-╚══════╝╚═╝     ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝╚══════╝`}</pre>
+            <pre className="ascii-banner" aria-label="Emmanuel OS">{`  ______ __  __ __  __          _   _ _    _ ______ _
+ |  ____|  \\/  |  \\/  |   /\\   | \\ | | |  | |  ____| |
+ | |__  | \\  / | \\  / |  /  \\  |  \\| | |  | | |__  | |
+ |  __| | |\\/| | |\\/| | / /\\ \\ | . \` | |  | |  __| | |
+ | |____| |  | | |  | |/ ____ \\| |\\  | |__| | |____| |____
+ |______|_|  |_|_|  |_/_/    \\_\\_| \\_|\\____/|______|______|`}</pre>
             <p className="identity-name">EMMANUEL OPPONG</p>
             <div className="identity-meta"><p>{context.profile.title}</p><p className="headline">{context.profile.headline}</p></div>
           </div>
