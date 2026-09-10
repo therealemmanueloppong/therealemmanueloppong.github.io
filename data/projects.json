@@ -1,46 +1,26 @@
 [
   {
+    "name": "Stock Price Prediction (AI4ALL)",
+    "slug": "stock-price-prediction",
+    "description": "A financial NLP pipeline predicting next-day stock price direction from headlines and market data.",
+    "longDescription": "Built an end-to-end financial NLP pipeline over 322K headlines and 20M stock records using FinBERT sentiment analysis. Designed a novel Competitive Pressure Index capturing negative news surge relative to each stock's baseline coverage, then trained a Random Forest classifier achieving 54% 5-fold cross-validated accuracy alongside a Logistic Regression baseline with full confusion matrix evaluation.",
+    "technologies": ["Python", "FinBERT", "HuggingFace Transformers", "Scikit-learn", "Pandas", "Random Forest"],
+    "links": { "github": "https://github.com/jiaying-l/AI4All_Project", "demo": "" }
+  },
+  {
     "name": "BuukEasy",
     "slug": "buukeasy",
-    "description": "A full-stack booking platform for solo beauty and wellness professionals.",
-    "longDescription": "BuukEasy is a full-stack booking platform with secure payments and a mobile-first interface, built for solo beauty and wellness professionals. The MVP launched with booking and payment features and is currently serving 5 clients.",
-    "technologies": ["Next.js", "PostgreSQL", "Tailwind CSS", "Ziina"],
-    "links": {
-      "github": "",
-      "demo": "https://buukeasy.com"
-    }
+    "description": "A booking platform with a mobile-first UI for solo beauty and wellness professionals.",
+    "longDescription": "Built a booking platform with a mobile-first UI and scheduling workflows for solo beauty and wellness professionals. Launched an MVP for client booking and scheduling, serving 5 clients and iterating on features based on user feedback.",
+    "technologies": ["Next.js", "PostgreSQL", "Tailwind CSS", "Vercel"],
+    "links": { "github": "", "demo": "https://buukeasy.com" }
   },
   {
-    "name": "FoodRunner",
-    "slug": "foodrunner",
-    "description": "A multi-platform food delivery application with real-time order tracking and automated driver assignment.",
-    "longDescription": "FoodRunner is a Flutter and Firebase food delivery application connecting customers, restaurants, and delivery drivers in real time. It supports restaurant and menu discovery, order management, live driver location tracking, proximity-based driver assignment and navigation.",
-    "technologies": ["Flutter", "Dart", "Firebase", "Cloud Firestore", "Google Maps"],
-    "links": {
-      "github": "https://github.com/princeampofo/foodrunner",
-      "demo": ""
-    }
-  },
-  {
-    "name": "Adversarial Defense Optimization",
-    "slug": "adversarial-defense-optimization",
-    "description": "A hybrid adversarial defense pipeline combining JPEG compression with DiffPure.",
-    "longDescription": "Built a hybrid adversarial defense pipeline that applies JPEG compression before DiffPure to reduce purification cost. Benchmarked robustness against standalone DiffPure under standard and adaptive attacks on CIFAR-10.",
-    "technologies": ["Python", "PyTorch", "AutoAttack", "DiffPure", "CIFAR-10"],
-    "links": {
-      "github": "https://github.com/princeampofo/adversarial-purification",
-      "demo": ""
-    }
-  },
-  {
-  "name": "Tracing Motion",
-  "slug": "tracing-motion",
-  "description": "A computer vision pipeline that transforms motion in video into Van Gogh-inspired animated artwork.",
-  "longDescription": "Tracing Motion converts video into stylized motion artwork by extracting moving silhouettes with MOG2 background subtraction, estimating motion using Farneback optical flow, and generating flow-directed Van Gogh strokes, paint strokes, contour rings, and post-processing effects.",
-  "technologies": ["Python", "OpenCV", "Computer Vision", "Optical Flow", "Streamlit"],
-  "links": {
-    "github": "https://github.com/princeampofo/tracing_motion",
-    "demo": ""
+    "name": "CITIES Dashboard",
+    "slug": "cities-dashboard",
+    "description": "An interactive air quality dashboard for schools across Accra.",
+    "longDescription": "Co-developed an interactive dashboard providing 20K+ students across Accra schools with air quality insights, and automated deployment workflows using GitHub Actions to streamline CI/CD and reduce manual deployment effort.",
+    "technologies": ["React", "Material UI", "Google Charts", "GitHub Actions"],
+    "links": { "github": "", "demo": "" }
   }
-}
 ]

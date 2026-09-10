@@ -6,7 +6,7 @@ import type { Experience, PortfolioContext, Project } from "@/lib/types";
 const commands = ["help", "about", "experience", "projects", "skills", "education", "contact", "resume", "clear"];
 type Entry = { input: string; output?: React.ReactNode };
 
-const Prompt = () => <span className="prompt">prince@portfolio <span>~</span> %</span>;
+const Prompt = () => <span className="prompt">emmanuel@portfolio <span>~</span> %</span>;
 const Label = ({ children }: { children: React.ReactNode }) => <div className="label">{children}</div>;
 const Tags = ({ items }: { items: string[] }) => <div className="tags">{items.map((item) => <span key={item}>{item}</span>)}</div>;
 const date = (value: string) => value === "Present" ? value.toUpperCase() : value.replace("-", ".");
@@ -52,14 +52,14 @@ export function Terminal({ context }: { context: PortfolioContext }) {
 
   const outputFor = (raw: string): React.ReactNode => {
     const command = raw.toLowerCase().trim();
-    if (command === "help") return <section><Label>AVAILABLE COMMANDS</Label><div className="command-grid">{[["about", "About Prince"], ["experience", "Professional experience"], ["projects", "Things he has built"], ["skills", "Technical toolkit"], ["education", "Education"], ["contact", "Contact information"], ["resume", "Open resume"], ["clear", "Clear terminal"]].map(([name, description]) => <div key={name}><b>{name}</b><span>{description}</span></div>)}</div></section>;
+    if (command === "help") return <section><Label>AVAILABLE COMMANDS</Label><div className="command-grid">{[["about", "About Emmanuel"], ["experience", "Professional experience"], ["projects", "Things he has built"], ["skills", "Technical toolkit"], ["education", "Education"], ["contact", "Contact information"], ["resume", "Open resume"], ["clear", "Clear terminal"]].map(([name, description]) => <div key={name}><b>{name}</b><span>{description}</span></div>)}</div></section>;
     if (command === "about") return <section className="about"><Label>PROFILE // {context.profile.name.toUpperCase()}</Label><h2>{context.profile.title}</h2><div className="headline">{context.profile.headline}</div><p>{context.profile.summary}</p><p className="muted">{context.profile.availability}</p></section>;
     if (command === "experience") return <section><Label>EXPERIENCE <small>SELECT AN ENTRY FOR DETAILS</small></Label>{context.experience.map((item, index) => <ExperienceItem key={`${item.organization}-${item.role}`} entry={item} index={index} />)}</section>;
     if (command === "projects") return <section><Label>PROJECTS <small>SELECT A PROJECT FOR TECHNICAL NOTES</small></Label>{context.projects.map((project, index) => <ProjectItem key={project.slug} project={project} index={index} />)}</section>;
     if (command === "skills") return <section><Label>TECHNICAL SKILLS</Label><div className="skill-grid">{context.skills.map((group) => <div className="skill-group" key={group.category}><h3>{group.category}</h3><Tags items={group.items} /></div>)}</div></section>;
     if (command === "education") return <section><Label>EDUCATION</Label>{context.education.map((item) => <div className="education" key={item.institution}><h3>{item.degree}</h3><p>{item.institution} <i>·</i> {item.location}</p><p>{item.duration}</p></div>)}</section>;
     if (command === "contact") return <section><Label>CONTACT</Label><div className="contact"><a href={`mailto:${context.contact.email}`}>{context.contact.email}</a><a href={context.contact.github} target="_blank" rel="noreferrer">GitHub ↗</a><a href={context.contact.linkedin} target="_blank" rel="noreferrer">LinkedIn ↗</a></div></section>;
-    if (command === "resume") return <section><Label>RESUME</Label><p>Open Prince&apos;s current resume in a new tab.</p><a className="resume-button" href={context.profile.resumeUrl} target="_blank" rel="noreferrer">OPEN RESUME ↗</a></section>;
+    if (command === "resume") return <section><Label>RESUME</Label><p>Open Emmanuel&apos;s current resume in a new tab.</p><a className="resume-button" href={context.profile.resumeUrl} target="_blank" rel="noreferrer">OPEN RESUME ↗</a></section>;
     return <section className="error"><p>command not found: <b>{raw}</b></p><p>Try: <button onClick={() => execute("help")}>help</button></p></section>;
   };
 
@@ -80,19 +80,19 @@ export function Terminal({ context }: { context: PortfolioContext }) {
 
   return <main className="shell" onClick={() => inputRef.current?.focus()}>
     <div className="terminal-frame">
-      <header><a className="wordmark" href="/">PRINCE<span>.OS</span></a><div className="status"><i /> ONLINE</div></header>
+      <header><a className="wordmark" href="/">EMMANUEL<span>.OS</span></a><div className="status"><i /> ONLINE</div></header>
       <nav aria-label="Portfolio navigation">{["about", "experience", "projects", "skills", "resume"].map((command) => <button key={command} onClick={() => execute(command)}>{command}</button>)}</nav>
       <div className="terminal-scroll" ref={scrollRef}>
-        {booting ? <div className="boot" onClick={() => setBooting(false)}><strong>PRINCE.OS <span>v1.0</span></strong><p>Initializing system...</p><p>Loading profile<span>........ OK</span></p><p>Loading experience<span>.... OK</span></p><p>Loading projects<span>...... OK</span></p><p>Loading skills<span>........ OK</span></p><p className="ready">System ready.</p><small>click to skip</small></div> : <>
+        {booting ? <div className="boot" onClick={() => setBooting(false)}><strong>EMMANUEL.OS <span>v1.0</span></strong><p>Initializing system...</p><p>Loading profile<span>........ OK</span></p><p>Loading experience<span>.... OK</span></p><p>Loading projects<span>...... OK</span></p><p>Loading skills<span>........ OK</span></p><p className="ready">System ready.</p><small>click to skip</small></div> : <>
           <div className="intro">
             <p className="system">SYSTEM ONLINE</p>
-            <pre className="ascii-banner" aria-label="Prince OS">{`██████╗ ██████╗ ██╗███╗   ██╗ ██████╗███████╗     ██████╗ ███████╗
-██╔══██╗██╔══██╗██║████╗  ██║██╔════╝██╔════╝    ██╔═══██╗██╔════╝
-██████╔╝██████╔╝██║██╔██╗ ██║██║     █████╗      ██║   ██║███████╗
-██╔═══╝ ██╔══██╗██║██║╚██╗██║██║     ██╔══╝      ██║   ██║╚════██║
-██║     ██║  ██║██║██║ ╚████║╚██████╗███████╗ ██ ╚██████╔╝███████║
-╚═╝     ╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝╚══════╝     ╚═════╝ ╚══════╝`}</pre>
-            <p className="identity-name">PRINCE AMPOFO</p>
+            <pre className="ascii-banner" aria-label="Emmanuel OS">{`███████╗███╗   ███╗███╗   ███╗ █████╗ ███╗   ██╗██╗   ██╗███████╗██╗
+██╔════╝████╗ ████║████╗ ████║██╔══██╗████╗  ██║██║   ██║██╔════╝██║
+█████╗  ██╔████╔██║██╔████╔██║███████║██╔██╗ ██║██║   ██║█████╗  ██║
+██╔══╝  ██║╚██╔╝██║██║╚██╔╝██║██╔══██║██║╚██╗██║██║   ██║██╔══╝  ██║
+███████╗██║ ╚═╝ ██║██║ ╚═╝ ██║██║  ██║██║ ╚████║╚██████╔╝███████╗███████╗
+╚══════╝╚═╝     ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝╚══════╝`}</pre>
+            <p className="identity-name">EMMANUEL OPPONG</p>
             <div className="identity-meta"><p>{context.profile.title}</p><p className="headline">{context.profile.headline}</p></div>
           </div>
           {entries.map((entry, index) => <div className="terminal-entry" key={`${entry.input}-${index}`}><div className="input-line"><Prompt /> <span>{entry.input}</span></div><div className="output">{entry.output}</div></div>)}

@@ -1,18 +1,18 @@
 [
   {
     "category": "Languages",
-    "items": ["Python", "C++/C", "Java", "JavaScript", "TypeScript", "SQL", "Go", "Dart"]
+    "items": ["Python", "Java", "Go", "C", "C++", "TypeScript/JavaScript", "SQL"]
   },
   {
-    "category": "Frameworks & Libraries",
-    "items": ["React", "Node.js", "Flask", "Pytest", "JUnit", "PyTorch", "LangChain", "LangGraph"]
+    "category": "Technologies",
+    "items": ["Kafka", "Redis", "PostgreSQL", "Docker", "Kubernetes", "Linux", "AWS", "React", "Next.js", "Node.js", "Spring Boot", "FastAPI", "Flask", "TensorFlow", "PyTorch", "LangChain", "LlamaIndex", "HuggingFace", "Scikit-learn", "Pandas", "Firebase", "MongoDB"]
   },
   {
-    "category": "Databases & Infrastructure",
-    "items": ["PostgreSQL", "MongoDB", "AWS", "Docker"]
+    "category": "Tools",
+    "items": ["Git/GitHub", "Bash", "CI/CD", "CircleCI", "Bazel", "Pytest"]
   },
   {
-    "category": "Developer Tools",
-    "items": ["Git", "CircleCI", "Buildkite", "Bazel"]
+    "category": "Concepts",
+    "items": ["Data Structures & Algorithms", "Distributed Systems", "Microservices", "REST APIs", "Event-Driven Systems"]
   }
 ]
