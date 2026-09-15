@@ -3,5 +3,5 @@ export interface Experience { organization: string; role: string; type: "interns
 export interface Project { name: string; slug: string; description: string; longDescription: string; technologies: string[]; links: { github: string; demo: string } }
 export interface SkillGroup { category: string; items: string[] }
 export interface Education { institution: string; degree: string; location: string; details: string; duration: string }
-export interface Contact { email: string; github: string; linkedin: string }
+export interface Contact { email: string; phone: string; github: string; linkedin: string }
 export interface PortfolioContext { profile: Profile; experience: Experience[]; projects: Project[]; skills: SkillGroup[]; education: Education[]; contact: Contact }
