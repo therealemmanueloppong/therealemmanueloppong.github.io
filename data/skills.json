@@ -5,11 +5,11 @@
   },
   {
     "category": "Frameworks & Libraries",
-    "items": ["React", "Node.js", "Angular", "Django", "Bootstrap", "jQuery"]
+    "items": ["React", "Node.js", "Spring Boot", "Angular", "Django", "Bootstrap"]
   },
   {
     "category": "Tools & Platforms",
-    "items": ["Git", "Docker", "AWS", "Jenkins", "JIRA", "Visual Studio"]
+    "items": ["Git", "Docker", "Kubernetes", "AWS", "Jenkins", "JIRA"]
   },
   {
     "category": "Databases",

@@ -6,13 +6,12 @@
     "location": "Remote",
     "startDate": "2026-08",
     "endDate": "Present",
-    "description": "Developed a machine learning model that reduced data processing time by 35%, using Python and TensorFlow.",
-    "technologies": ["Python", "TensorFlow"],
+    "description": "Developed a Python and TensorFlow classification model to identify anomalous records in historical operational data, optimizing the preprocessing and inference pipeline to reduce data-processing time by 35%.",
+    "technologies": ["Python", "TensorFlow", "React", "PostgreSQL"],
     "highlights": [
-      "Collaborated with a team of five engineers to implement automated testing scripts, decreasing bug occurrence by 40%.",
-      "Designed a new user interface for an internal tool, enhancing user experience scores by 50%.",
-      "Optimized database queries, resulting in a 25% increase in data retrieval speed.",
-      "Participated in weekly code reviews, leading to a 15% reduction in code defects."
+      "Designed and implemented an automated testing framework for a Python-based data-processing platform, integrating unit and regression tests into CI and reducing bug occurrence by 40% across a five-engineer team.",
+      "Redesigned the React interface for an internal batch-monitoring tool used by 40+ engineers, simplifying job-status workflows and increasing user-experience survey scores by 50%.",
+      "Optimized 20+ PostgreSQL queries supporting the batch-monitoring tool by adding indexes and restructuring high-cost joins, reducing p95 query latency by 25%."
     ]
   },
   {
@@ -22,11 +21,11 @@
     "location": "Remote",
     "startDate": "2026-07",
     "endDate": "2026-10",
-    "description": "Crafted a Java-based tool that automated cloud resource allocation, saving the team approximately 10 hours monthly.",
-    "technologies": ["Java"],
+    "description": "Developed a Java-based AWS resource-allocation tool automating EC2 and S3 provisioning, saving about 10 hours of manual work per month.",
+    "technologies": ["Java", "AWS", "AWS KMS"],
     "highlights": [
-      "Enhanced an existing application's security by integrating encryption algorithms, lowering vulnerability threats by 25%.",
-      "Contributed to a collaborative code review process, enhancing code quality and reducing bugs by 40% through peer evaluations."
+      "Implemented AES-256 encryption for sensitive data at rest and integrated AWS KMS for managed key storage, reducing high-severity security findings by 25% in follow-up vulnerability assessments.",
+      "Reviewed 150+ Java and cloud-automation pull requests for correctness, security, and maintainability, cutting average review turnaround time by 30%."
     ]
   },
   {
@@ -36,13 +35,12 @@
     "location": "Remote",
     "startDate": "2025-10",
     "endDate": "2025-12",
-    "description": "Developed microservices architecture that improved scalability by 35%.",
-    "technologies": ["Microservices", "CI/CD"],
+    "description": "Designed and deployed Spring Boot microservices on Kubernetes, enabling independent scaling of high-traffic services and increasing supported request throughput by 35% in load tests.",
+    "technologies": ["Spring Boot", "Kubernetes", "PostgreSQL", "Jenkins", "Docker"],
     "highlights": [
-      "Integrated third-party APIs to enhance functionality, reducing development time by 25%.",
-      "Optimized database queries, achieving a 30% reduction in latency.",
-      "Built automated CI/CD pipelines, leading to a 40% increase in deployment efficiency.",
-      "Participated in code reviews, resulting in a 20% reduction in post-deployment issues."
+      "Integrated Bloomberg Open API (BLPAPI) to stream real-time prices and historical data for 10+ financial instruments, powering live portfolio monitoring.",
+      "Analyzed PostgreSQL execution plans and optimized indexes and high-cost joins, reducing p95 database latency by 30% for the market-data service.",
+      "Built Jenkins, Docker, and Kubernetes CI/CD pipelines for automated testing, image publishing, and rolling deployments, reducing manual release effort by 40%."
     ]
   },
   {
@@ -52,11 +50,11 @@
     "location": "Grambling, LA",
     "startDate": "2024-09",
     "endDate": "2025-04",
-    "description": "Conducted regular software updates and patches, improving system security by 10%.",
-    "technologies": [],
+    "description": "Deployed software updates and security patches across 500+ computers in 60+ campus buildings, achieving 100% update completion with zero reported disruptions.",
+    "technologies": ["Excel"],
     "highlights": [
-      "Assisted in network setup and troubleshooting, resulting in a 95% network uptime on campus.",
-      "Created and maintained IT inventory records, reducing equipment loss by 5%."
+      "Configured and maintained switches, wireless access points, and network connections across 60+ campus buildings, sustaining 95% network uptime campus-wide.",
+      "Built and maintained an Excel-based inventory system tracking 500+ IT assets across 60+ campus buildings, reducing average asset lookup time by 40% and speeding up audit completion."
     ]
   }
 ]

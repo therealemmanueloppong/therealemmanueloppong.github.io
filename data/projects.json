@@ -2,8 +2,8 @@
   {
     "name": "Stock Price Prediction (AI4ALL)",
     "slug": "stock-price-prediction",
-    "description": "A financial NLP pipeline predicting next-day stock price direction from headlines and market data.",
-    "longDescription": "Built an end-to-end financial NLP pipeline over 322K headlines and 20M stock records using FinBERT sentiment analysis. Designed a novel Competitive Pressure Index capturing negative news surge relative to each stock's baseline coverage, then trained a Random Forest classifier achieving 54% 5-fold cross-validated accuracy alongside a Logistic Regression baseline with full confusion matrix evaluation.",
+    "description": "A financial NLP pipeline predicting stock movement from headlines and market data.",
+    "longDescription": "Built an end-to-end financial NLP pipeline processing 322K headlines and 20M stock records using FinBERT sentiment analysis for stock-movement classification. Engineered a novel Competitive Pressure Index capturing negative news surges relative to each stock's baseline coverage, serving as the core feature for downstream classification. Trained a Random Forest classifier via 5-fold cross-validation achieving 54% accuracy, outperforming a Logistic Regression baseline with full confusion matrix evaluation.",
     "technologies": ["Python", "FinBERT", "Scikit-learn"],
     "links": { "github": "", "demo": "" }
   },
@@ -11,7 +11,7 @@
     "name": "CITIES Dashboard",
     "slug": "cities-dashboard",
     "description": "An interactive air quality dashboard for schools across Monroe, Louisiana.",
-    "longDescription": "Co-developed an interactive dashboard providing 20K+ students across Monroe, Louisiana schools with air quality insights, and automated deployment workflows using GitHub Actions to streamline CI/CD and reduce manual deployment effort.",
+    "longDescription": "Built the front-end of a dashboard delivering air quality insights to 20K+ students across Monroe, Louisiana schools. Automated deployment workflows using GitHub Actions, replacing manual build-and-release steps with a single pipeline and cutting release time by roughly 30%.",
     "technologies": ["React", "Material UI", "Google Charts", "GitHub Actions"],
     "links": { "github": "", "demo": "" }
   }
