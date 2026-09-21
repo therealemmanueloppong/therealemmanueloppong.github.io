@@ -1,17 +1,17 @@
 [
   {
     "organization": "Google",
-    "role": "Google Basta Fellow (GSWEP)",
+    "role": "Software Engineer Fellow",
     "type": "internship",
     "location": "Remote",
     "startDate": "2026-08",
     "endDate": "Present",
-    "description": "Developed a Python and TensorFlow classification model to identify anomalous records in historical operational data, optimizing the preprocessing and inference pipeline to reduce data-processing time by 35%.",
+    "description": "Develop a Python/TensorFlow classification model to flag anomalous records in historical operational data, cutting data-processing time by 35%.",
     "technologies": ["Python", "TensorFlow", "React", "PostgreSQL"],
     "highlights": [
-      "Designed and implemented an automated testing framework for a Python-based data-processing platform, integrating unit and regression tests into CI and reducing bug occurrence by 40% across a five-engineer team.",
-      "Redesigned the React interface for an internal batch-monitoring tool used by 40+ engineers, simplifying job-status workflows and increasing user-experience survey scores by 50%.",
-      "Optimized 20+ PostgreSQL queries supporting the batch-monitoring tool by adding indexes and restructuring high-cost joins, reducing p95 query latency by 25%."
+      "Build an automated testing framework for a Python data-processing platform, integrating unit and regression tests into CI and reducing bug occurrence by 40% across a five-engineer team.",
+      "Redesign the React interface for an internal batch-monitoring tool used by 40+ engineers, simplifying job-status workflows and raising user-experience survey scores by 50%.",
+      "Optimize 20+ PostgreSQL queries behind the batch-monitoring tool by adding indexes and restructuring high-cost joins, cutting p95 query latency by 25%."
     ]
   },
   {
@@ -21,26 +21,26 @@
     "location": "Remote",
     "startDate": "2026-07",
     "endDate": "2026-10",
-    "description": "Developed a Java-based AWS resource-allocation tool automating EC2 and S3 provisioning, saving about 10 hours of manual work per month.",
+    "description": "Developed a Java-based AWS resource-allocation tool automating EC2 and S3 provisioning, saving roughly 10 hours of manual work per month.",
     "technologies": ["Java", "AWS", "AWS KMS"],
     "highlights": [
-      "Implemented AES-256 encryption for sensitive data at rest and integrated AWS KMS for managed key storage, reducing high-severity security findings by 25% in follow-up vulnerability assessments.",
+      "Implemented AES-256 encryption for data at rest and integrated AWS KMS for managed key storage, cutting high-severity findings by 25% in follow-up vulnerability assessments.",
       "Reviewed 150+ Java and cloud-automation pull requests for correctness, security, and maintainability, cutting average review turnaround time by 30%."
     ]
   },
   {
     "organization": "Bloomberg",
-    "role": "Bloomberg Tech Lab Fellow",
+    "role": "Tech Lab Fellow",
     "type": "internship",
     "location": "Remote",
     "startDate": "2025-10",
     "endDate": "2025-12",
-    "description": "Designed and deployed Spring Boot microservices on Kubernetes, enabling independent scaling of high-traffic services and increasing supported request throughput by 35% in load tests.",
+    "description": "Designed and deployed Spring Boot microservices on Kubernetes, enabling independent scaling of high-traffic services and raising supported request throughput by 35% in load tests.",
     "technologies": ["Spring Boot", "Kubernetes", "PostgreSQL", "Jenkins", "Docker"],
     "highlights": [
-      "Integrated Bloomberg Open API (BLPAPI) to stream real-time prices and historical data for 10+ financial instruments, powering live portfolio monitoring.",
-      "Analyzed PostgreSQL execution plans and optimized indexes and high-cost joins, reducing p95 database latency by 30% for the market-data service.",
-      "Built Jenkins, Docker, and Kubernetes CI/CD pipelines for automated testing, image publishing, and rolling deployments, reducing manual release effort by 40%."
+      "Integrated Bloomberg's real-time market-data API (BLPAPI) to stream live prices and historical data for 10+ financial instruments, powering live portfolio monitoring.",
+      "Analyzed PostgreSQL execution plans and optimized indexes and high-cost joins, cutting p95 database latency by 30% for the market-data service.",
+      "Built Jenkins/Docker/Kubernetes CI/CD pipelines for automated testing, image publishing, and rolling deployments, cutting manual release effort by 40%."
     ]
   },
   {
@@ -54,7 +54,7 @@
     "technologies": ["Excel"],
     "highlights": [
       "Configured and maintained switches, wireless access points, and network connections across 60+ campus buildings, sustaining 95% network uptime campus-wide.",
-      "Built and maintained an Excel-based inventory system tracking 500+ IT assets across 60+ campus buildings, reducing average asset lookup time by 40% and speeding up audit completion."
+      "Built and maintained an Excel-based inventory system tracking 500+ IT assets across 60+ campus buildings, cutting average asset lookup time by 40% and speeding up audits."
     ]
   }
 ]

@@ -1,18 +1,18 @@
 [
   {
-    "category": "Programming Languages",
-    "items": ["Python", "Java", "JavaScript", "C++", "HTML/CSS", "SQL"]
+    "category": "Languages",
+    "items": ["Python", "Java", "JavaScript", "C++", "SQL"]
   },
   {
-    "category": "Frameworks & Libraries",
-    "items": ["React", "Node.js", "Spring Boot", "Angular", "Django", "Bootstrap"]
+    "category": "Frameworks",
+    "items": ["React", "Node.js", "Spring Boot"]
   },
   {
-    "category": "Tools & Platforms",
-    "items": ["Git", "Docker", "Kubernetes", "AWS", "Jenkins", "JIRA"]
+    "category": "Tools & Cloud",
+    "items": ["Git", "Docker", "Kubernetes", "AWS", "Jenkins"]
   },
   {
     "category": "Databases",
-    "items": ["MySQL", "MongoDB", "PostgreSQL", "Oracle", "Redis", "SQLite"]
+    "items": ["PostgreSQL", "MySQL", "MongoDB"]
   }
 ]
