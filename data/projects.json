@@ -1,18 +1,18 @@
 [
   {
-    "name": "Stock Price Prediction (AI4ALL)",
-    "slug": "stock-price-prediction",
-    "description": "A financial NLP pipeline predicting stock movement from headlines and market data.",
-    "longDescription": "Built an end-to-end financial NLP pipeline processing 322K headlines and 20M stock records, using FinBERT sentiment analysis for stock-movement classification. Engineered a novel Competitive Pressure Index capturing negative-news surges relative to each stock's baseline coverage, used as the core feature for downstream classification. Trained a Random Forest classifier via 5-fold cross-validation, achieving 54% accuracy and outperforming a Logistic Regression baseline.",
-    "technologies": ["Python", "FinBERT", "Scikit-learn"],
+    "name": "CITIES Dashboard",
+    "slug": "cities-dashboard",
+    "description": "A front-end dashboard delivering air-quality insights to schools across Monroe, Louisiana.",
+    "longDescription": "Built a dashboard front end delivering air-quality insights to 20K+ students across schools in Monroe, Louisiana. Automated builds and deployment with GitHub Actions, reducing release time by approximately 30%.",
+    "technologies": ["React", "Material UI", "Google Charts", "GitHub Actions"],
     "links": { "github": "", "demo": "" }
   },
   {
-    "name": "CITIES Dashboard",
-    "slug": "cities-dashboard",
-    "description": "An interactive air quality dashboard for schools across Monroe, Louisiana.",
-    "longDescription": "Built the front-end of a dashboard delivering air-quality insights to 20K+ students across Monroe, Louisiana schools. Automated deployment with GitHub Actions, replacing manual build-and-release steps with a single pipeline and cutting release time by roughly 30%.",
-    "technologies": ["React", "Material UI", "Google Charts", "GitHub Actions"],
+    "name": "Stock Price Prediction (AI4ALL)",
+    "slug": "stock-price-prediction",
+    "description": "A financial NLP pipeline classifying stock movements from news headlines and market data.",
+    "longDescription": "Built a financial NLP pipeline processing 322K headlines and 20M stock records, using FinBERT sentiment features to classify stock movements. Engineered a Competitive Pressure Index measuring negative-news surges relative to baseline coverage; trained a Random Forest with 5-fold cross-validation, achieving 54% accuracy and outperforming Logistic Regression.",
+    "technologies": ["Python", "FinBERT", "Scikit-learn"],
     "links": { "github": "", "demo": "" }
   }
 ]

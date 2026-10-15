@@ -16,7 +16,7 @@ function ExperienceItem({ entry, index }: { entry: Experience; index: number }) 
   return <article className="record">
     <button className="record-top" onClick={() => setExpanded(!expanded)} aria-expanded={expanded}>
       <span className="record-index">{String(index + 1).padStart(2, "0")}</span>
-      <span className="record-title"><strong>{entry.role}</strong><span>{entry.organization} <i>·</i> {entry.location}</span></span>
+      <span className="record-title"><strong>{entry.role}</strong><span>{entry.organization}{entry.location && <> <i>·</i> {entry.location}</>}</span></span>
       <span className="record-date">{date(entry.startDate)} — {date(entry.endDate)}</span><span className="chevron">{expanded ? "−" : "+"}</span>
     </button>
     {expanded && <div className="record-detail"><p>{entry.description}</p><Tags items={entry.technologies} /><ul>{entry.highlights.map((highlight) => <li key={highlight}>{highlight}</li>)}</ul></div>}

@@ -1,60 +1,56 @@
 [
   {
-    "organization": "Google",
-    "role": "Software Engineer Fellow",
-    "type": "internship",
-    "location": "Remote",
+    "organization": "Bismuth TechHub",
+    "role": "Software Engineer Apprentice",
+    "type": "other",
+    "location": "",
     "startDate": "2026-08",
     "endDate": "Present",
-    "description": "Develop a Python/TensorFlow classification model to flag anomalous records in historical operational data, cutting data-processing time by 35%.",
-    "technologies": ["Python", "TensorFlow", "React", "PostgreSQL"],
+    "description": "Design and develop cross-platform mobile applications using Flutter, delivering consistent mobile interfaces across platforms.",
+    "technologies": ["Flutter", "Dart", "Provider", "SQLite"],
     "highlights": [
-      "Build an automated testing framework for a Python data-processing platform, integrating unit and regression tests into CI and reducing bug occurrence by 40% across a five-engineer team.",
-      "Redesign the React interface for an internal batch-monitoring tool used by 40+ engineers, simplifying job-status workflows and raising user-experience survey scores by 50%.",
-      "Optimize 20+ PostgreSQL queries behind the batch-monitoring tool by adding indexes and restructuring high-cost joins, cutting p95 query latency by 25%."
+      "Optimize mobile application performance, contributing to a 30% increase in app downloads.",
+      "Implement application state management with Provider and local data persistence with SQLite to manage app data across screens and sessions."
     ]
   },
   {
-    "organization": "HeadStarter AI",
+    "organization": "HeadStarter",
     "role": "Software Engineer Fellow",
-    "type": "internship",
-    "location": "Remote",
-    "startDate": "2026-07",
-    "endDate": "2026-10",
-    "description": "Developed a Java-based AWS resource-allocation tool automating EC2 and S3 provisioning, saving roughly 10 hours of manual work per month.",
-    "technologies": ["Java", "AWS", "AWS KMS"],
+    "type": "other",
+    "location": "",
+    "startDate": "2025-12",
+    "endDate": "2026-03",
+    "description": "Implemented automated unit testing for a Java application using JUnit and test-driven development, improving testing efficiency by 30%.",
+    "technologies": ["Java", "JUnit", "Linux"],
     "highlights": [
-      "Implemented AES-256 encryption for data at rest and integrated AWS KMS for managed key storage, cutting high-severity findings by 25% in follow-up vulnerability assessments.",
-      "Reviewed 150+ Java and cloud-automation pull requests for correctness, security, and maintainability, cutting average review turnaround time by 30%."
-    ]
-  },
-  {
-    "organization": "Bloomberg",
-    "role": "Tech Lab Fellow",
-    "type": "internship",
-    "location": "Remote",
-    "startDate": "2025-10",
-    "endDate": "2025-12",
-    "description": "Designed and deployed Spring Boot microservices on Kubernetes, enabling independent scaling of high-traffic services and raising supported request throughput by 35% in load tests.",
-    "technologies": ["Spring Boot", "Kubernetes", "PostgreSQL", "Jenkins", "Docker"],
-    "highlights": [
-      "Integrated Bloomberg's real-time market-data API (BLPAPI) to stream live prices and historical data for 10+ financial instruments, powering live portfolio monitoring.",
-      "Analyzed PostgreSQL execution plans and optimized indexes and high-cost joins, cutting p95 database latency by 30% for the market-data service.",
-      "Built Jenkins/Docker/Kubernetes CI/CD pipelines for automated testing, image publishing, and rolling deployments, cutting manual release effort by 40%."
+      "Authored eight pages of Linux setup and SVN documentation, incorporating feedback from five engineers."
     ]
   },
   {
     "organization": "Grambling State University",
-    "role": "IT Assistant",
-    "type": "part-time",
+    "role": "Machine Learning Student Researcher",
+    "type": "other",
     "location": "Grambling, LA",
     "startDate": "2024-09",
     "endDate": "2025-04",
-    "description": "Deployed software updates and security patches across 500+ computers in 60+ campus buildings, achieving 100% update completion with zero reported disruptions.",
-    "technologies": ["Excel"],
+    "description": "Researched spatially varying neural networks under Professor Bharat Rawal to build interpretable models for high-dimensional neuroimaging data.",
+    "technologies": ["Python", "PyTorch"],
     "highlights": [
-      "Configured and maintained switches, wireless access points, and network connections across 60+ campus buildings, sustaining 95% network uptime campus-wide.",
-      "Built and maintained an Excel-based inventory system tracking 500+ IT assets across 60+ campus buildings, cutting average asset lookup time by 40% and speeding up audits."
+      "Implemented CNN, DNN, and Vision Transformer baselines in Python and PyTorch; tuned convolutional channels, pooling, and dropout to reduce overfitting by 37%."
+    ]
+  },
+  {
+    "organization": "Kehilah Global",
+    "role": "Software Engineer Intern",
+    "type": "internship",
+    "location": "",
+    "startDate": "2024-02",
+    "endDate": "2024-07",
+    "description": "Developed .NET report-generator features supporting 150,000 reports annually.",
+    "technologies": [".NET", "C#", "Visual Basic", "JavaScript"],
+    "highlights": [
+      "Led two interns in migrating the application from Visual Basic to C# to support future deployments.",
+      "Built a JavaScript web application feature that reduced team workload by 30%; refined the UI using feedback from 30 users."
     ]
   }
 ]
