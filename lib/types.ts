@@ -4,4 +4,6 @@ export interface Project { name: string; slug: string; description: string; long
 export interface SkillGroup { category: string; items: string[] }
 export interface Education { institution: string; degree: string; location: string; details: string; duration: string }
 export interface Contact { email: string; phone: string; github: string; linkedin: string }
-export interface PortfolioContext { profile: Profile; experience: Experience[]; projects: Project[]; skills: SkillGroup[]; education: Education[]; contact: Contact }
+export interface LeadershipRole { role: string; organization: string; duration: string; description: string }
+export interface Leadership { roles: LeadershipRole[]; awards: string[] }
+export interface PortfolioContext { profile: Profile; experience: Experience[]; projects: Project[]; skills: SkillGroup[]; education: Education[]; leadership: Leadership; contact: Contact }

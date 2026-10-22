@@ -3,7 +3,7 @@
 import { FormEvent, KeyboardEvent, useEffect, useRef, useState } from "react";
 import type { Experience, PortfolioContext, Project } from "@/lib/types";
 
-const commands = ["help", "about", "experience", "projects", "skills", "education", "contact", "resume", "clear"];
+const commands = ["help", "about", "experience", "projects", "skills", "education", "leadership", "contact", "resume", "clear"];
 type Entry = { input: string; output?: React.ReactNode };
 
 const Prompt = () => <span className="prompt">emmanuel@portfolio <span>~</span> %</span>;
@@ -52,12 +52,13 @@ export function Terminal({ context }: { context: PortfolioContext }) {
 
   const outputFor = (raw: string): React.ReactNode => {
     const command = raw.toLowerCase().trim();
-    if (command === "help") return <section><Label>AVAILABLE COMMANDS</Label><div className="command-grid">{[["about", "About Emmanuel"], ["experience", "Professional experience"], ["projects", "Things he has built"], ["skills", "Technical toolkit"], ["education", "Education"], ["contact", "Contact information"], ["resume", "Open resume"], ["clear", "Clear terminal"]].map(([name, description]) => <div key={name}><b>{name}</b><span>{description}</span></div>)}</div></section>;
+    if (command === "help") return <section><Label>AVAILABLE COMMANDS</Label><div className="command-grid">{[["about", "About Emmanuel"], ["experience", "Professional experience"], ["projects", "Things he has built"], ["skills", "Technical toolkit"], ["education", "Education"], ["leadership", "Leadership and awards"], ["contact", "Contact information"], ["resume", "Open resume"], ["clear", "Clear terminal"]].map(([name, description]) => <div key={name}><b>{name}</b><span>{description}</span></div>)}</div></section>;
     if (command === "about") return <section className="about"><Label>PROFILE // {context.profile.name.toUpperCase()}</Label><h2>{context.profile.title}</h2><div className="headline">{context.profile.headline}</div><p>{context.profile.summary}</p><p className="muted">{context.profile.availability}</p></section>;
     if (command === "experience") return <section><Label>EXPERIENCE <small>SELECT AN ENTRY FOR DETAILS</small></Label>{context.experience.map((item, index) => <ExperienceItem key={`${item.organization}-${item.role}`} entry={item} index={index} />)}</section>;
     if (command === "projects") return <section><Label>PROJECTS <small>SELECT A PROJECT FOR TECHNICAL NOTES</small></Label>{context.projects.map((project, index) => <ProjectItem key={project.slug} project={project} index={index} />)}</section>;
     if (command === "skills") return <section><Label>TECHNICAL SKILLS</Label><div className="skill-grid">{context.skills.map((group) => <div className="skill-group" key={group.category}><h3>{group.category}</h3><Tags items={group.items} /></div>)}</div></section>;
     if (command === "education") return <section><Label>EDUCATION</Label>{context.education.map((item) => <div className="education" key={item.institution}><h3>{item.degree}</h3><p>{item.institution} <i>·</i> {item.location}</p><p>{item.duration}</p>{item.details && <p>{item.details}</p>}</div>)}</section>;
+    if (command === "leadership") return <section><Label>LEADERSHIP &amp; AWARDS</Label>{context.leadership.roles.map((item) => <div className="education" key={item.role}><h3>{item.role}</h3><p>{item.organization} <i>·</i> {item.duration}</p>{item.description && <p>{item.description}</p>}</div>)}<div style={{ marginTop: 24 }}><Label>AWARDS</Label><Tags items={context.leadership.awards} /></div></section>;
     if (command === "contact") return <section><Label>CONTACT</Label><div className="contact"><a href={`mailto:${context.contact.email}`}>{context.contact.email}</a><a href={`tel:${context.contact.phone}`}>{context.contact.phone}</a><a href={context.contact.github} target="_blank" rel="noreferrer">GitHub ↗</a><a href={context.contact.linkedin} target="_blank" rel="noreferrer">LinkedIn ↗</a></div></section>;
     if (command === "resume") return <section><Label>RESUME</Label><p>Open Emmanuel&apos;s current resume in a new tab.</p><a className="resume-button" href={context.profile.resumeUrl} target="_blank" rel="noreferrer">OPEN RESUME ↗</a></section>;
     return <section className="error"><p>command not found: <b>{raw}</b></p><p>Try: <button onClick={() => execute("help")}>help</button></p></section>;

@@ -1,0 +1,17 @@
+{
+  "roles": [
+    {
+      "role": "AWS Student Builder Group Leader",
+      "organization": "Grambling State University",
+      "duration": "Starts Nov 2026",
+      "description": ""
+    },
+    {
+      "role": "Academic Chair",
+      "organization": "ColorStack Grambling",
+      "duration": "Aug 2026 – Present",
+      "description": "Lead weekly data structures and algorithms workshops for 90+ members."
+    }
+  ],
+  "awards": ["2x Dean's List", "4x Academic Excellence Scholarship"]
+}
