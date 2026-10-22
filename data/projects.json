@@ -1,17 +1,25 @@
 [
   {
-    "name": "CITIES Dashboard",
-    "slug": "cities-dashboard",
-    "description": "A front-end dashboard delivering air-quality insights to schools across Monroe, Louisiana.",
-    "longDescription": "Built a dashboard front end delivering air-quality insights to 20K+ students across schools in Monroe, Louisiana. Automated builds and deployment with GitHub Actions, reducing release time by approximately 30%.",
-    "technologies": ["React", "Material UI", "Google Charts", "GitHub Actions"],
-    "links": { "github": "", "demo": "" }
+    "name": "GPU Robot Lab",
+    "slug": "gpu-robot-lab",
+    "description": "Triton GPU kernels and a GPU robot simulation, benchmarked against PyTorch and a single CPU thread.",
+    "longDescription": "Wrote Triton matrix-multiply kernels verified against PyTorch on an NVIDIA T4. Traced the slow first version to register spilling and tuned it 3.4x faster (1,096 to 3,727 GFLOPS), and found its compiled code uses no tensor cores, the likely cause of the remaining gap. Built a MuJoCo MJX robot simulation up to 126x faster than one CPU thread on a GPU (2.75x once collisions are added), with a planner 2 to 26x faster on the GPU than the CPU at the same batch size, and a neural-network controller, trained with a curriculum, that swings up and holds a pendulum. Ran controlled experiments: 10 repeats per version (PyTorch itself varied up to 44%), and a one-change-at-a-time test showing the grouped launch order adds 4 to 14%. Backed by 90+ automated tests in CI and an interactive explainer site on GitHub Pages.",
+    "technologies": ["Python", "Triton", "PyTorch", "MuJoCo", "JAX"],
+    "links": { "github": "https://github.com/therealemmanueloppong/gpu-robot-lab", "demo": "https://therealemmanueloppong.github.io/gpu-robot-lab/" }
   },
   {
-    "name": "Stock Price Prediction (AI4ALL)",
+    "name": "InterviewPair",
+    "slug": "interviewpair",
+    "description": "The core of an app that pairs students for mock technical interviews.",
+    "longDescription": "Built the core of an app that pairs students for mock technical interviews: a Spring Boot API with JWT login, hashed passwords and a tested matching rule, and a React frontend, in one Docker image. Wrote 30+ automated tests, including expired, tampered and wrongly signed login tokens, and CI on GitHub Actions that builds the Docker image on every push.",
+    "technologies": ["Java", "Spring Boot", "PostgreSQL", "React", "TypeScript", "Docker"],
+    "links": { "github": "https://github.com/therealemmanueloppong/interview-pair", "demo": "" }
+  },
+  {
+    "name": "Stock Price Prediction (AI4ALL Ignite, team project)",
     "slug": "stock-price-prediction",
-    "description": "A financial NLP pipeline classifying stock movements from news headlines and market data.",
-    "longDescription": "Built a financial NLP pipeline processing 322K headlines and 20M stock records, using FinBERT sentiment features to classify stock movements. Engineered a Competitive Pressure Index measuring negative-news surges relative to baseline coverage; trained a Random Forest with 5-fold cross-validation, achieving 54% accuracy and outperforming Logistic Regression.",
+    "description": "A 3-person team project predicting next-day stock decreases from financial news headlines.",
+    "longDescription": "Contributed to a 3-person team project that predicts next-day stock decreases from financial news headlines, using FinBERT sentiment features and 20M+ stock price records. The Random Forest reached 54.4% accuracy against 50.8% for the Logistic Regression baseline on 64,599 held-out headlines. Wrote the evaluation script: 5-fold stratified cross-validation on a 50,000-article sample, with classification reports and confusion matrices for both models.",
     "technologies": ["Python", "FinBERT", "Scikit-learn"],
     "links": { "github": "", "demo": "" }
   }

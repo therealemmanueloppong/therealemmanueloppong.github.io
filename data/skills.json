@@ -1,18 +1,14 @@
 [
   {
     "category": "Languages",
-    "items": ["Python", "Java", "Dart", "JavaScript", "TypeScript", "SQL", "C++", "C#"]
+    "items": ["Python", "TypeScript", "JavaScript"]
   },
   {
     "category": "Frameworks & Libraries",
-    "items": ["Flutter", "Provider", "React", "Node.js", ".NET", "PyTorch", "TensorFlow", "Scikit-learn", "FAISS"]
+    "items": ["React", "Next.js", "Tailwind CSS", "Scikit-learn"]
   },
   {
-    "category": "Cloud, Testing & Tools",
-    "items": ["AWS", "Docker", "Kubernetes", "Git", "GitHub Actions", "JUnit", "Linux"]
-  },
-  {
-    "category": "Databases",
-    "items": ["PostgreSQL", "MySQL", "MongoDB", "SQLite"]
+    "category": "Tools",
+    "items": ["Git", "GitHub", "Supabase"]
   }
 ]

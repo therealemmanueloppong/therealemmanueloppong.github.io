@@ -1,56 +1,39 @@
 [
   {
-    "organization": "Bismuth TechHub",
-    "role": "Software Engineer Apprentice",
+    "organization": "ZipMath",
+    "role": "Founder & Developer",
     "type": "other",
-    "location": "",
-    "startDate": "2026-08",
+    "location": "Cross-platform mobile app",
+    "startDate": "2026-10",
     "endDate": "Present",
-    "description": "Design and develop cross-platform mobile applications using Flutter, delivering consistent mobile interfaces across platforms.",
-    "technologies": ["Flutter", "Dart", "Provider", "SQLite"],
+    "description": "Founded and built ZipMath, a mobile app that teaches mental-math shortcuts through short lessons and game-style practice, with 26 levels across Basic, Intermediate, and Advanced tiers.",
+    "technologies": ["React Native", "TypeScript"],
     "highlights": [
-      "Optimize mobile application performance, contributing to a 30% increase in app downloads.",
-      "Implement application state management with Provider and local data persistence with SQLite to manage app data across screens and sessions."
+      "Designed the engagement system: XP, daily streaks, 3 hearts per practice round, and a 1 to 3 star rating (no mistakes earns 3 stars), to keep learners practicing.",
+      "Built the app in React Native and TypeScript with a question engine that computes every answer in code, so practice questions are always correct, and animated lesson and quiz flows that save progress on the device."
+    ],
+    "links": [
+      { "label": "Live demo", "url": "https://therealemmanueloppong.github.io/zipmath/" },
+      { "label": "GitHub", "url": "https://github.com/therealemmanueloppong/zipmath" }
     ]
   },
   {
-    "organization": "HeadStarter",
-    "role": "Software Engineer Fellow",
+    "organization": "Apache Kafka, Kubernetes Java Client, PostgreSQL JDBC",
+    "role": "Open Source Contributor",
     "type": "other",
     "location": "",
-    "startDate": "2025-12",
-    "endDate": "2026-03",
-    "description": "Implemented automated unit testing for a Java application using JUnit and test-driven development, improving testing efficiency by 30%.",
-    "technologies": ["Java", "JUnit", "Linux"],
+    "startDate": "2026-02",
+    "endDate": "2026-02",
+    "description": "Merged 3 documentation pull requests into major open source projects, each through the project's review process: Apache Kafka, Kubernetes Java client, and PostgreSQL JDBC.",
+    "technologies": [],
     "highlights": [
-      "Authored eight pages of Linux setup and SVN documentation, incorporating feedback from five engineers."
-    ]
-  },
-  {
-    "organization": "Grambling State University",
-    "role": "Machine Learning Student Researcher",
-    "type": "other",
-    "location": "Grambling, LA",
-    "startDate": "2024-09",
-    "endDate": "2025-04",
-    "description": "Researched spatially varying neural networks under Professor Bharat Rawal to build interpretable models for high-dimensional neuroimaging data.",
-    "technologies": ["Python", "PyTorch"],
-    "highlights": [
-      "Implemented CNN, DNN, and Vision Transformer baselines in Python and PyTorch; tuned convolutional channels, pooling, and dropout to reduce overfitting by 37%."
-    ]
-  },
-  {
-    "organization": "Kehilah Global",
-    "role": "Software Engineer Intern",
-    "type": "internship",
-    "location": "",
-    "startDate": "2024-02",
-    "endDate": "2024-07",
-    "description": "Developed .NET report-generator features supporting 150,000 reports annually.",
-    "technologies": [".NET", "C#", "Visual Basic", "JavaScript"],
-    "highlights": [
-      "Led two interns in migrating the application from Visual Basic to C# to support future deployments.",
-      "Built a JavaScript web application feature that reduced team workload by 30%; refined the UI using feedback from 30 users."
+      "Rewrote the Kafka Streams guide and the Javadoc of two core classes (3 files, 43 lines) to explain that enabling topology optimizations takes two steps, with a code example and a warning that build() without Properties silently skips them.",
+      "Wrote 147 lines of release history (v15.0.0 to v25.0.0, including the v20.0.0 breaking changes) for the Kubernetes client, and documented the SCRAM authentication test setup for the PostgreSQL JDBC driver."
+    ],
+    "links": [
+      { "label": "Apache Kafka PR", "url": "https://github.com/apache/kafka/pull/21556" },
+      { "label": "Kubernetes Java client PR", "url": "https://github.com/kubernetes-client/java/pull/4616" },
+      { "label": "PostgreSQL JDBC PR", "url": "https://github.com/pgjdbc/pgjdbc/pull/3945" }
     ]
   }
 ]

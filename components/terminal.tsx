@@ -17,9 +17,9 @@ function ExperienceItem({ entry, index }: { entry: Experience; index: number }) 
     <button className="record-top" onClick={() => setExpanded(!expanded)} aria-expanded={expanded}>
       <span className="record-index">{String(index + 1).padStart(2, "0")}</span>
       <span className="record-title"><strong>{entry.role}</strong><span>{entry.organization}{entry.location && <> <i>·</i> {entry.location}</>}</span></span>
-      <span className="record-date">{date(entry.startDate)} — {date(entry.endDate)}</span><span className="chevron">{expanded ? "−" : "+"}</span>
+      <span className="record-date">{date(entry.startDate)}{entry.endDate !== entry.startDate && <> — {date(entry.endDate)}</>}</span><span className="chevron">{expanded ? "−" : "+"}</span>
     </button>
-    {expanded && <div className="record-detail"><p>{entry.description}</p><Tags items={entry.technologies} /><ul>{entry.highlights.map((highlight) => <li key={highlight}>{highlight}</li>)}</ul></div>}
+    {expanded && <div className="record-detail"><p>{entry.description}</p>{entry.technologies.length > 0 && <Tags items={entry.technologies} />}<ul>{entry.highlights.map((highlight) => <li key={highlight}>{highlight}</li>)}</ul>{entry.links && entry.links.length > 0 && <div className="project-links">{entry.links.map((link) => <a key={link.url} href={link.url} target="_blank" rel="noreferrer">{link.label} ↗</a>)}</div>}</div>}
   </article>;
 }
 

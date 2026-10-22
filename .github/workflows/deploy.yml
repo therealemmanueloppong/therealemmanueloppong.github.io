@@ -1,4 +1,4 @@
-name: Deploy PRINCE.OS
+name: Deploy EMMANUEL.OS
 
 on:
   push:

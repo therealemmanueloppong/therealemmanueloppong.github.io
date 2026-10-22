@@ -1,4 +1,4 @@
-# PRINCE.OS
+# EMMANUEL.OS
 
 A terminal-first, static personal portfolio built with Next.js, TypeScript, and Tailwind CSS.
 
