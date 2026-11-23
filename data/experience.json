@@ -23,16 +23,19 @@
     "type": "other",
     "location": "",
     "startDate": "2026-02",
-    "endDate": "2026-02",
-    "description": "Merged 3 documentation pull requests into major open source projects, each through the project's review process: Apache Kafka, Kubernetes Java client, and PostgreSQL JDBC.",
+    "endDate": "2026-11",
+    "description": "Merged 5 pull requests (2 code, 3 documentation) into major open source projects, each through the project's review process: Apache Kafka, Kubernetes Java client, and PostgreSQL JDBC.",
     "technologies": [],
     "highlights": [
+      "Removed a fixed 10 second Thread.sleep from DefaultDelayingQueueTest in the Kubernetes Java client by waiting on the actual condition, cutting that test class from about 10.5 seconds to 0.5, and replaced a hand-written sleep loop in WaitTest with Thread.join.",
       "Rewrote the Kafka Streams guide and the Javadoc of two core classes (3 files, 43 lines) to explain that enabling topology optimizations takes two steps, with a code example and a warning that build() without Properties silently skips them.",
       "Wrote 147 lines of release history (v15.0.0 to v25.0.0, including the v20.0.0 breaking changes) for the Kubernetes client, and documented the SCRAM authentication test setup for the PostgreSQL JDBC driver."
     ],
     "links": [
       { "label": "Apache Kafka PR", "url": "https://github.com/apache/kafka/pull/21556" },
       { "label": "Kubernetes Java client PR", "url": "https://github.com/kubernetes-client/java/pull/4616" },
+      { "label": "Kubernetes test PR #4970", "url": "https://github.com/kubernetes-client/java/pull/4970" },
+      { "label": "Kubernetes test PR #4971", "url": "https://github.com/kubernetes-client/java/pull/4971" },
       { "label": "PostgreSQL JDBC PR", "url": "https://github.com/pgjdbc/pgjdbc/pull/3945" }
     ]
   }
