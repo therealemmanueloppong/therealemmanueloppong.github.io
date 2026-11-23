@@ -1,14 +1,37 @@
 [
   {
     "category": "Languages",
-    "items": ["Python", "C++", "TypeScript", "JavaScript"]
+    "items": [
+      "Python",
+      "Java",
+      "C++",
+      "TypeScript",
+      "JavaScript"
+    ]
   },
   {
     "category": "Frameworks & Libraries",
-    "items": ["React", "Next.js", "Tailwind CSS", "Scikit-learn"]
+    "items": [
+      "Spring Boot",
+      "React",
+      "React Native",
+      "Next.js",
+      "PyTorch",
+      "Triton",
+      "JAX",
+      "MuJoCo",
+      "Scikit-learn"
+    ]
   },
   {
     "category": "Tools",
-    "items": ["Git", "GitHub", "Supabase"]
+    "items": [
+      "Git",
+      "GitHub Actions (CI)",
+      "Docker",
+      "PostgreSQL",
+      "Supabase",
+      "JWT"
+    ]
   }
 ]

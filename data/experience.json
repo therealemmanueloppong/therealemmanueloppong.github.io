@@ -1,23 +1,5 @@
 [
   {
-    "organization": "ZipMath",
-    "role": "Founder & Developer",
-    "type": "other",
-    "location": "Cross-platform mobile app",
-    "startDate": "2026-10",
-    "endDate": "Present",
-    "description": "Founded and built ZipMath, a mobile app that teaches mental-math shortcuts through short lessons and game-style practice, with 26 levels across Basic, Intermediate, and Advanced tiers.",
-    "technologies": ["React Native", "TypeScript"],
-    "highlights": [
-      "Designed the engagement system: XP, daily streaks, 3 hearts per practice round, and a 1 to 3 star rating (no mistakes earns 3 stars), to keep learners practicing.",
-      "Built the app in React Native and TypeScript with a question engine that computes every answer in code, so practice questions are always correct, and animated lesson and quiz flows that save progress on the device."
-    ],
-    "links": [
-      { "label": "Live demo", "url": "https://therealemmanueloppong.github.io/zipmath/" },
-      { "label": "GitHub", "url": "https://github.com/therealemmanueloppong/zipmath" }
-    ]
-  },
-  {
     "organization": "Apache Kafka, Kubernetes Java Client, PostgreSQL JDBC",
     "role": "Open Source Contributor",
     "type": "other",
@@ -31,12 +13,57 @@
       "Rewrote the Kafka Streams guide and the Javadoc of two core classes to explain that enabling topology optimizations takes two steps, with a warning that build() without Properties silently skips them. Wrote 147 lines of Kubernetes client release history (v15.0.0 to v25.0.0)."
     ],
     "links": [
-      { "label": "Apache Kafka PR", "url": "https://github.com/apache/kafka/pull/21556" },
-      { "label": "Kubernetes Java client PR", "url": "https://github.com/kubernetes-client/java/pull/4616" },
-      { "label": "Kubernetes test PR #4970", "url": "https://github.com/kubernetes-client/java/pull/4970" },
-      { "label": "Kubernetes test PR #4971", "url": "https://github.com/kubernetes-client/java/pull/4971" },
-      { "label": "PostgreSQL JDBC PR", "url": "https://github.com/pgjdbc/pgjdbc/pull/3945" },
-      { "label": "All 5 merged PRs", "url": "https://github.com/search?q=author%3Atherealemmanueloppong+is%3Apr+is%3Amerged+-user%3Atherealemmanueloppong&type=pullrequests" }
+      {
+        "label": "Apache Kafka PR",
+        "url": "https://github.com/apache/kafka/pull/21556"
+      },
+      {
+        "label": "Kubernetes Java client PR",
+        "url": "https://github.com/kubernetes-client/java/pull/4616"
+      },
+      {
+        "label": "Kubernetes test PR #4970",
+        "url": "https://github.com/kubernetes-client/java/pull/4970"
+      },
+      {
+        "label": "Kubernetes test PR #4971",
+        "url": "https://github.com/kubernetes-client/java/pull/4971"
+      },
+      {
+        "label": "PostgreSQL JDBC PR",
+        "url": "https://github.com/pgjdbc/pgjdbc/pull/3945"
+      },
+      {
+        "label": "All 5 merged PRs",
+        "url": "https://github.com/search?q=author%3Atherealemmanueloppong+is%3Apr+is%3Amerged+-user%3Atherealemmanueloppong&type=pullrequests"
+      }
+    ]
+  },
+  {
+    "organization": "ZipMath",
+    "role": "Founder & Developer",
+    "type": "other",
+    "location": "Cross-platform mobile app",
+    "startDate": "2026-10",
+    "endDate": "Present",
+    "description": "Founded and built ZipMath, a mobile app that teaches mental-math shortcuts through short lessons and game-style practice, with 26 levels across Basic, Intermediate, and Advanced tiers.",
+    "technologies": [
+      "React Native",
+      "TypeScript"
+    ],
+    "highlights": [
+      "Designed the engagement system: XP, daily streaks, 3 hearts per practice round, and a 1 to 3 star rating (no mistakes earns 3 stars), to keep learners practicing.",
+      "Built the app in React Native and TypeScript with a question engine that computes every answer in code, so practice questions are always correct, and animated lesson and quiz flows that save progress on the device."
+    ],
+    "links": [
+      {
+        "label": "Live demo",
+        "url": "https://therealemmanueloppong.github.io/zipmath/"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/therealemmanueloppong/zipmath"
+      }
     ]
   },
   {
@@ -47,13 +74,18 @@
     "startDate": "2025-01",
     "endDate": "2025-05",
     "description": "Under Professor Dileon Saint-Jean, co-authored with Joshua Udo a study showing breached passwords such as P@ssw0rd still pass Gmail, Yahoo, and Outlook checks.",
-    "technologies": ["Python"],
+    "technologies": [
+      "Python"
+    ],
     "highlights": [
       "Proposed and implemented in Python a breach-adjusted entropy metric that penalizes breached passwords.",
       "Extended in 2026: on 1,001 breached passwords, the formula scored a median 19.6 bits above zxcvbn."
     ],
     "links": [
-      { "label": "Paper and code", "url": "https://github.com/therealemmanueloppong/password-entropy" }
+      {
+        "label": "Paper and code",
+        "url": "https://github.com/therealemmanueloppong/password-entropy"
+      }
     ]
   }
 ]
