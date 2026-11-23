@@ -36,7 +36,8 @@
       { "label": "Kubernetes Java client PR", "url": "https://github.com/kubernetes-client/java/pull/4616" },
       { "label": "Kubernetes test PR #4970", "url": "https://github.com/kubernetes-client/java/pull/4970" },
       { "label": "Kubernetes test PR #4971", "url": "https://github.com/kubernetes-client/java/pull/4971" },
-      { "label": "PostgreSQL JDBC PR", "url": "https://github.com/pgjdbc/pgjdbc/pull/3945" }
+      { "label": "PostgreSQL JDBC PR", "url": "https://github.com/pgjdbc/pgjdbc/pull/3945" },
+      { "label": "All 5 merged PRs", "url": "https://github.com/search?q=author%3Atherealemmanueloppong+is%3Apr+is%3Amerged+-user%3Atherealemmanueloppong&type=pullrequests" }
     ]
   }
 ]
