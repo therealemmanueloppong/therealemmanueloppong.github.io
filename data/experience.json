@@ -23,13 +23,12 @@
     "type": "other",
     "location": "",
     "startDate": "2026-02",
-    "endDate": "2026-11",
-    "description": "Merged 5 pull requests (2 code, 3 documentation) into major open source projects, each through the project's review process: Apache Kafka, Kubernetes Java client, and PostgreSQL JDBC.",
+    "endDate": "Present",
+    "description": "Merged 5 pull requests into major open source projects, each through the project's review process: 2 code and 3 documentation (Apache Kafka, Kubernetes Java client, and PostgreSQL JDBC).",
     "technologies": [],
     "highlights": [
-      "Removed a fixed 10 second Thread.sleep from DefaultDelayingQueueTest in the Kubernetes Java client by waiting on the actual condition, cutting that test class from about 10.5 seconds to 0.5, and replaced a hand-written sleep loop in WaitTest with Thread.join.",
-      "Rewrote the Kafka Streams guide and the Javadoc of two core classes (3 files, 43 lines) to explain that enabling topology optimizations takes two steps, with a code example and a warning that build() without Properties silently skips them.",
-      "Wrote 147 lines of release history (v15.0.0 to v25.0.0, including the v20.0.0 breaking changes) for the Kubernetes client, and documented the SCRAM authentication test setup for the PostgreSQL JDBC driver."
+      "Replaced fixed Thread.sleep waits in two Kubernetes Java client tests (#4970, #4971), part of the project's timing-wait cleanup. One test class went from about 10.5 s to 0.5 s.",
+      "Rewrote the Kafka Streams guide and the Javadoc of two core classes to explain that enabling topology optimizations takes two steps, with a warning that build() without Properties silently skips them. Wrote 147 lines of Kubernetes client release history (v15.0.0 to v25.0.0)."
     ],
     "links": [
       { "label": "Apache Kafka PR", "url": "https://github.com/apache/kafka/pull/21556" },
@@ -38,6 +37,23 @@
       { "label": "Kubernetes test PR #4971", "url": "https://github.com/kubernetes-client/java/pull/4971" },
       { "label": "PostgreSQL JDBC PR", "url": "https://github.com/pgjdbc/pgjdbc/pull/3945" },
       { "label": "All 5 merged PRs", "url": "https://github.com/search?q=author%3Atherealemmanueloppong+is%3Apr+is%3Amerged+-user%3Atherealemmanueloppong&type=pullrequests" }
+    ]
+  },
+  {
+    "organization": "Grambling State University",
+    "role": "Undergraduate Researcher",
+    "type": "other",
+    "location": "",
+    "startDate": "2025-01",
+    "endDate": "2025-05",
+    "description": "Under Professor Dileon Saint-Jean, co-authored with Joshua Udo a study showing breached passwords such as P@ssw0rd still pass Gmail, Yahoo, and Outlook checks.",
+    "technologies": ["Python"],
+    "highlights": [
+      "Proposed and implemented in Python a breach-adjusted entropy metric that penalizes breached passwords.",
+      "Extended in 2026: on 1,001 breached passwords, the formula scored a median 19.6 bits above zxcvbn."
+    ],
+    "links": [
+      { "label": "Paper and code", "url": "https://github.com/therealemmanueloppong/password-entropy" }
     ]
   }
 ]
